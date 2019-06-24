@@ -19,6 +19,13 @@ vue.runtime.esm.js?2b0e:1888 Error: [vuex] do not mutate vuex store state outsid
     at createComponent (vue.runtime.esm.js?2b0e:3184)
 ```
 
+Quick investigation:
+  1. when we're on line
+     [vue.runtime.esm.js:3184](https://github.com/vuejs/vue/blob/v2.6.10/dist/vue.runtime.esm.js#L3184)
+  1. and we're about to process `Blah.vue` for the first time, that when the
+     errors appear
+
+
 ## How to run
 You can run each case by:
 ```bash
