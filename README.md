@@ -1,4 +1,4 @@
-A repo with a minimal reproduction of an error when using Vue-Onsen and Vuex. When using a custom component that is imported into the parent component and defined in `components: {}`, and the child has a `props: {}` key in the definition, we get the following errors in the browser console:
+A repo with a minimal reproduction of [an error](https://github.com/OnsenUI/OnsenUI/issues/2662) when using Vue-Onsen and Vuex. When using a custom component that is imported into the parent component and defined in `components: {}`, and the child has a `props: {}` key in the definition, we get the following errors in the browser console:
 
 ```
 [Vue warn]: Error in callback for watcher "function () { return this._data.$$state }": "Error: [vuex] do not mutate vuex store state outside mutation handlers."
